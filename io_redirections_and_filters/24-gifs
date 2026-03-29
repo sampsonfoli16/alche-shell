@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f \( -name "*.gif" -o -name ".*.gif" \) -print | while read -r f; do echo "${f%.*}"; done | sort -f
+find . -type f \( -name "*.gif" -o -name ".*.gif" \) -exec bash -c 'for f; do echo "${f%.*}"; done' _ {} + | sort -f
