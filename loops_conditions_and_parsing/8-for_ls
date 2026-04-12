@@ -1,19 +1,7 @@
 #!/usr/bin/env bash
-# Displays hours and minutes
+# Displays file names after the first dash
 
-hour=0
-
-while [ "$hour" -le 12 ]
+for file in *
 do
-    echo "Hour: $hour"
-
-    minute=1
-
-    while [ "$minute" -le 59 ]
-    do
-        echo "$minute"
-        ((minute++))
-    done
-
-    ((hour++))
+    echo "$file" | cut -d'-' -f2-
 done
