@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#printing lines containg bash
+ps aux | grep bash
