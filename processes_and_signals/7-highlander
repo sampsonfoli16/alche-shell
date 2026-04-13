@@ -2,7 +2,6 @@
 # Infinite loop with signal handling
 
 trap 'echo "I am invincible!!!"' SIGTERM
-
 while true
 do
   echo "To infinity and beyond"
